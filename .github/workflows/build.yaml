@@ -34,4 +34,4 @@ jobs:
         run: docker compose run --rm test
 
       - name: Push to GitHub Container Registry
-        run: docker compose push homeassistant
+        run: docker compose build --push homeassistant
