@@ -8,7 +8,9 @@ This image is **not intended for production use**.
 ## Usage
 
 ```shell
-docker run gh
+docker run \
+  --publish 8123:8123 \
+  ghcr.io/ciaranmcnulty/homeassistant-test-container:latest
 ```
 
 This container is used the same way as [the Home Assistant container](https://www.home-assistant.io/installation/linux/#platform-installation)
